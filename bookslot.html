@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+
+
+        input {
+            border: 2px solid black;
+            margin: 0.5rem;
+            padding: 0.3rem;
+        }
+
+        .select-button {
+            margin: 0.5rem;
+            margin-left: 140px;
+            padding: 0.3rem 1rem;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .select-button:hover {
+            background-color: blueviolet;
+        }
+
+        .login-heading {
+            padding: 1rem 1rem;
+            color: purple;
+            border-bottom: 2px solid grey;
+        }
+
+
+
+
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar div {
+            background-color: #313536;
+            color: white;
+            padding: 0.4rem 0.4rem;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .book-slot-heading {
+            background-color: #edf2ef;
+            padding: 0.4rem;
+            width: 400px;
+            text-align: center;
+        }
+
+        /* .booking-form {
+            display: flex;
+            flex-direction: column;
+        } */
+
+        .select-slot {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            width: 400px;
+            margin-top: 1rem;
+            justify-content: center;
+
+        }
+
+        .select-slot button {
+            padding: 1rem;
+            display: inline-block;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .book-slot-button {
+            display: block;
+            padding: 1rem;
+            width: 100px;
+            cursor: pointer;
+            margin-top: 2rem;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>View Parking</div>
+        <div>Book Parking</div>
+        <div>View Booking</div>
+        <div>Feedback</div>
+        <div>Logout</div>
+    </nav>
+    <h1 class="book-slot-heading">Book Slot</h1>
+    <form class="booking-form">
+        <label>Select Date</label>
+        <input placeholder="dd/mm/yy" type="date" style="margin-bottom: 20px;">
+
+        <div>
+            <label>Start Time</label>
+            <input type="time">
+
+            <label>End Time</label>
+            <input type="time">
+        </div>
+
+        <button class="select-button">Select Slot</button>
+    </form>
+
+    <div class="select-slot">
+        <button>Slot 1</button>
+        <button>Slot 2</button>
+        <button>Slot 3</button>
+        <button>Slot 4</button>
+        <button>Slot 5</button>
+        <button>Slot 6</button>
+        <button>Slot 7</button>
+        <button>Slot 8</button>
+        <button>Slot 9</button>
+        <button>Slot 10</button>
+        <button>Slot 11</button>
+        <button>Slot 12</button>
+        <button>Slot 13</button>
+        <button>Slot 14</button>
+        <button>Slot 15</button>
+        <button>Slot 16</button>
+        <button>Slot 17</button>
+    </div>
+    <a class="book-slot-button" href="booking-details.html">Book </a>
+</body>
+
+</html>
